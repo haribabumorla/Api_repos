@@ -1,0 +1,23 @@
+#%RAML 1.0
+title: src-targ-sys-api
+
+/query:
+  get:
+    queryParameters:
+      accountNumber?: string 
+    responses:
+      200:
+        body:
+          application/json:
+/ping:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+            example:
+              {
+                "status":"ok"
+              }
+            
+            
